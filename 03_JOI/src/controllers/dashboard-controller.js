@@ -14,6 +14,14 @@ export const dashboardController = {
         },
     },
 
+    deletePlaylist: {
+        handler: async function (request, h) {
+            const playlist = await db.playlistStore.getPlaylistById(request.params.id);
+            await db.playlistStore.deletePlaylistById(playlist._id);
+            return h.redirect("/dashboard");
+        },
+    },
+
     addPlaylist: {
         handler: async function (request, h) {
             const loggedInUser = request.auth.credentials;
