@@ -1,0 +1,16 @@
+{
+  "playlists": [
+    {
+      "title": "Beethoven Sonatas",
+      "_id": "2ad945bc-af85-429f-b7e0-4ab6376f9eda"
+    },
+    {
+      "title": "Beethoven Concertos",
+      "_id": "bd073df5-f278-4683-8735-078085eaaf28"
+    },
+    {
+      "title": "Beethoven Symphonies",
+      "_id": "137e177d-b625-49c6-abda-2c2529188d39"
+    }
+  ]
+}
