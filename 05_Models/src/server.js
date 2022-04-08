@@ -28,8 +28,6 @@ async function init() {
     port: 3000,
     host: "localhost",
   });
-  await server.register(Vision);
-  await server.register(Cookie);
   server.validator(Joi);
   await server.register(Vision);
   await server.register(Cookie);
@@ -56,7 +54,7 @@ async function init() {
     layout: true,
     isCached: false,
   });
-  db.init();
+  db.init("mongo");
   server.route(webRoutes);
   await server.start();
   console.log("Server running on %s", server.info.uri);
